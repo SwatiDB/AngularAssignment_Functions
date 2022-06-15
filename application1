@@ -1,0 +1,50 @@
+class Arithematics
+{
+    Number1:number;
+    Number2:number;
+constructor(num1:number,num2:number)
+{
+    this.Number1=num1;
+    this.Number2=num2;
+}
+    AdditionOfNums()
+    {
+        var Answer:number=0;
+        Answer=this.Number1+this.Number2;
+        return Answer;
+    }
+    SubstractionOfNums()
+    {
+        var Answer:number=0;
+        Answer=this.Number1-this.Number2;
+        return Answer;
+    }
+    MultiplicationOfNums()
+    {
+        var Answer:number=0;
+        Answer=this.Number1*this.Number2;
+        return Answer;
+    }
+    DivisionOfNums()
+    {
+        var Answer:number=0;
+        Answer=this.Number1/this.Number2;
+        return Answer;
+    }
+}
+    var ArrObj1= new Arithematics(21,10);
+    var ArrObj2= new Arithematics(15,16);
+
+    var Ret:number=0;  // for return value
+
+    Ret=ArrObj1.AdditionOfNums();
+    console.log("Addition is:"+Ret);
+
+    Ret=ArrObj1.SubstractionOfNums();
+    console.log("Substraction is:"+Ret);
+
+    Ret=ArrObj2.MultiplicationOfNums();
+    console.log("Multiplication is:"+Ret);
+
+    Ret=ArrObj2.DivisionOfNums();
+    console.log("Division is:"+Ret);
