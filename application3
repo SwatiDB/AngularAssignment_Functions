@@ -1,0 +1,43 @@
+class Circles
+{
+
+    Radius:number;
+    PI:number=3.14;
+    constructor(radius:number)
+    {
+        this.Radius=radius;
+    }
+
+Area()
+{
+    var Ans:number=0;
+    Ans=3.14*this.Radius*this.Radius;
+    return Ans;
+}
+}
+class CircleX extends Circles
+{
+    constructor(radius:number)
+    {
+       super(radius);
+    }
+    Circumference()
+    {
+        var Ans:number=0;
+        Ans= 2* 3.14*this.Radius;
+        return Ans;
+    }
+}
+
+   
+
+var obj1=new CircleX(6);
+var obj2=new CircleX(8)
+
+var Ret:number=0;
+
+Ret=obj1.Circumference();
+console.log("Circumference is :"+Ret);
+
+Ret=obj2.Area();
+console.log("Area is:"+Ret);
